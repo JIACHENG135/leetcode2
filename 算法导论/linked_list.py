@@ -6,8 +6,9 @@ Created on Sun Nov 18 21:11:53 2018
 """
 
 class Node(object):
-    def __init__(self,data,pnext=None):
+    def __init__(self,data,pnext=None,ppre = None):
         self._next = pnext
+        self._prev = ppre
         self.data = data
     def __repr__(self):
         return str(self.data)
@@ -44,7 +45,7 @@ class linked_list(object):
             node._next = item
             self.length +=1 
             
-    def insert(self,dataOrnode,index):
+    def insert(self,dataOrnode,index=0):
         if self.isEmpty():
             print('Linked list is already empty now initialize')
             self.__init__()
@@ -89,7 +90,10 @@ class linked_list(object):
             node_next = node._next
             node._next = node_next._next
             
-        
+#    def trans_to_array(self):
+#        new_array = [[]]*(3*self.length)
+#        node = self.head
+#        
         
             
             

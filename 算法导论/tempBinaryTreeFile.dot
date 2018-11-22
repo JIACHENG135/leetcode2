@@ -1,0 +1,22 @@
+digraph G{
+
+node0[label = "3"];
+node1[label = "9"];
+node2[label = "20"];
+node5[label = "15"];
+node11[label = "7"];
+node12[label = "9"];
+node6[label = "7"];
+node13[label = "2"];
+node14[label = "5"];
+
+node0 -> node1;
+node0 -> node2;
+node2 -> node5;
+node5 -> node11;
+node5 -> node12;
+node2 -> node6;
+node6 -> node13;
+node6 -> node14;
+
+}
